@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Party Character Spinner - Viewer</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./vendor/dice-box/style.css" />
+  </head>
+  <body data-mode="view">
+    <main class="app">
+      <header>
+        <div class="brand-row">
+          <img src="./assets/ow/ow-logo.png" alt="Overwatch logo" class="ow-logo" />
+          <div class="brand-chip">Viewer Console</div>
+        </div>
+        <h1>Party Character Spinner</h1>
+        <p>Live view. Host controls roll/spin; this page updates automatically.</p>
+      </header>
+
+      <section class="top-controls">
+        <article class="control-card">
+          <h2>D6 Roll</h2>
+          <div class="dice-stage" id="dice3d"></div>
+          <p class="result">Result: <strong id="diceResult">1</strong></p>
+        </article>
+
+        <article class="control-card">
+          <h2>Stat Wheel</h2>
+          <div class="wheel-wrap">
+            <div class="pointer"></div>
+            <canvas id="statWheel" width="360" height="360" aria-label="Stat wheel"></canvas>
+          </div>
+          <p class="result">Result: <strong id="statResult">-</strong></p>
+        </article>
+      </section>
+      <section class="round-action">
+        <button id="runRoundBtn" type="button">Host Controlled</button>
+      </section>
+
+      <section class="profiles-panel">
+        <div class="panel-head">
+          <h3>Profiles (Auto Load)</h3>
+          <button id="reloadAllBtn" type="button">Reload All Profiles</button>
+        </div>
+        <div id="profilesGrid" class="profiles-grid"></div>
+      </section>
+    </main>
+
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>

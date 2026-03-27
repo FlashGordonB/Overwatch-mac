@@ -1,0 +1,22 @@
+Party Character Spinner - Run + URLs
+
+Run (from project folder):
+cd /Users/gordo/Documents/GitHub/Overwatch-mac
+./run-local-mac.sh
+
+Local Host URL:
+http://localhost:3010/host
+
+Local Viewer URL:
+http://localhost:3010/view
+
+If you expose this online (domain/tunnel), use:
+https://YOUR-DOMAIN/host
+https://YOUR-DOMAIN/view
+
+Porkbun domain example:
+https://spin.bownsfam.app/host
+https://spin.bownsfam.app/view
+
+macOS start command for domain deploy:
+OW_HOST='127.0.0.1' PORT='3010' PUBLIC_ORIGIN='https://spin.bownsfam.app' ./run-local-mac.sh

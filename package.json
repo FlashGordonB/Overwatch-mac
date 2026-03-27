@@ -1,0 +1,13 @@
+{
+  "name": "party-character-spinner",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local hosted two-wheel spinner for choosing party characters.",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@3d-dice/dice-box": "^1.1.4",
+    "sharp": "^0.34.5"
+  }
+}

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spin Control Hub</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body data-mode="landing">
+    <main class="landing-shell">
+      <section class="landing-screen">
+        <header class="ow-topbar">
+          <div class="ow-topbar-left">
+            <button class="ow-home-button" type="button" disabled aria-label="Home">
+              <span class="ow-home-glyph">Home</span>
+            </button>
+            <button class="ow-nav-button" type="button" disabled>Heroes</button>
+            <button class="ow-nav-button" type="button" disabled>Events</button>
+            <button class="ow-nav-button" type="button" disabled>Battle Pass</button>
+            <button class="ow-nav-button" type="button" disabled>Shop</button>
+            <button class="ow-nav-button" type="button" disabled>Story</button>
+          </div>
+          <div class="ow-play-pill">
+            <img src="./assets/ow/ow-logo.png" alt="" />
+            <span>Play</span>
+          </div>
+          <div class="ow-topbar-right">
+            <div class="ow-status-pill">spin.bownsfam.app</div>
+          </div>
+        </header>
+
+        <section class="landing-stage">
+          <div class="landing-stage-overlay"></div>
+
+          <div class="landing-column landing-column-left">
+            <div class="landing-panel">
+              <p class="landing-label">Host Console</p>
+              <h1>Run the room.</h1>
+              <p class="landing-copy">
+                Control the roll, trigger the stat spin, and broadcast the round state to every
+                viewer screen.
+              </p>
+              <a class="landing-cta landing-cta-host" href="/host">
+                <img src="./assets/ow/role-tank.svg" alt="" />
+                <span>Open Host</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="landing-column landing-column-right">
+            <div class="landing-panel landing-panel-right">
+              <p class="landing-label">Viewer Screen</p>
+              <h2>Show the live board.</h2>
+              <p class="landing-copy">
+                Keep a clean spectator display open for the couch, stream overlay, or shared room
+                monitor.
+              </p>
+              <a class="landing-cta landing-cta-view" href="/view">
+                <img src="./assets/ow/role-support.svg" alt="" />
+                <span>Open View</span>
+              </a>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
