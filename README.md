@@ -48,6 +48,19 @@ Use Porkbun for DNS, and keep this app running on your machine/server as the bac
    - macOS Terminal:
      `PUBLIC_ORIGIN='https://bownsfam.app' ./run-local-mac.sh`
 
+### Run with Caddy on macOS
+
+This repo includes a sample `Caddyfile` for `spin.bownsfam.app` that proxies to the local app on `127.0.0.1:3010`.
+
+1. Make sure DNS for `spin.bownsfam.app` points to this machine's public IP
+2. Forward router ports `80` and `443` to this Mac
+3. Start the full domain stack:
+   `./run-domain-mac.sh`
+
+If you want a different hostname, update:
+- `Caddyfile`
+- `DOMAIN` / `PUBLIC_ORIGIN` in `run-domain-mac.sh`
+
 Environment variables supported by `server.js`:
 - `PORT` (default `3010`)
 - `HOST` (default `0.0.0.0`)
